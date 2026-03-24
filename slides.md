@@ -6,27 +6,18 @@ info: |
   ## JavaScript Essentials
   Révision complète de JavaScript - 20h
   
-  Modules :
-  1. Fondamentaux (4h)
-  2. Fonctions et Portée (4h)
-  3. Objets et Tableaux (4h)
-  4. Asynchrone et API (4h)
-  5. DOM et Projet Final (4h)
-class: text-center
 drawings:
   persist: false
 transition: slide-left
-duration: 20h
 ---
 
 # JavaScript Essentials
 
-## Révision Complète - 20h
 
 De débutant à avancé
 
 <div class="mt-12">
-  <span class="text-2xl">🚀 Modules 1-5</span>
+  <span class="text-2xl">  Modules 1-5</span>
 </div>
 
 <div class="abs-br m-6 text-xl">
@@ -39,50 +30,6 @@ De débutant à avancé
 transition: fade-out
 ---
 
-# Programme de la Formation
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-
-### Module 1 - Fondamentaux (4h)
-- Variables et types
-- Opérateurs
-- Structures de contrôle
-- **Mini-projet** : Jeu "Plus ou Moins"
-
-### Module 2 - Fonctions (4h)
-- Déclarations et expressions
-- Fonctions fléchées
-- Scope et closures
-- **Mini-projet** : Convertisseur de devises
-
-</div>
-
-<div>
-
-### Module 3 - Objets & Tableaux (4h)
-- Méthodes modernes (map, filter, reduce)
-- Manipulation d'objets
-- Destructuring ES6
-- **Mini-projet** : Gestionnaire de contacts
-
-### Module 4 - Asynchrone (4h)
-- Promises
-- Async/await
-- Consommation d'API
-- **Mini-projet** : Application météo
-
-### Module 5 - DOM & Événements (4h)
-- Manipulation du DOM
-- Gestion des événements
-- **Projet final** : Todo List complète
-
-</div>
-
-</div>
-
----
 layout: center
 class: text-center
 ---
@@ -90,7 +37,6 @@ class: text-center
 # Module 1
 ## Fondamentaux JavaScript
 
-Durée : 4 heures
 
 ---
 
@@ -98,11 +44,11 @@ Durée : 4 heures
 
 <v-clicks>
 
-- ✅ Comprendre la syntaxe de base de JavaScript
-- ✅ Maîtriser les différents types de données
-- ✅ Savoir utiliser les structures conditionnelles
-- ✅ Maîtriser les boucles (for, while)
-- ✅ Créer son premier programme interactif
+-   Comprendre la syntaxe de base de JavaScript
+-   Maîtriser les différents types de données
+-   Savoir utiliser les structures conditionnelles
+-   Maîtriser les boucles (for, while)
+-   Créer son premier programme interactif
 
 </v-clicks>
 
@@ -121,7 +67,7 @@ Durée : 4 heures
 
 <div v-click class="mt-8 p-4 bg-blue-50 rounded-lg">
 
-### 🎯 Où écrit-on du JavaScript ?
+###   Où écrit-on du JavaScript ?
 
 ```html
 <!-- Dans le HTML -->
@@ -142,21 +88,21 @@ Durée : 4 heures
 ## Déclaration de variables
 
 ```js {monaco}
-// ❌ var - Ancienne méthode (à éviter)
+//   var - Ancienne méthode (à éviter)
 var nom = "Alice";
 
-// ✅ let - Variable réassignable
+//   let - Variable réassignable
 let age = 25;
 age = 26; // OK
 
-// ✅ const - Constante (non réassignable)
+//   const - Constante (non réassignable)
 const PI = 3.14159;
-// PI = 3.14; // ❌ Erreur !
+// PI = 3.14; //   Erreur !
 ```
 
 <div class="mt-4 p-4 bg-yellow-50 rounded-lg">
 
-💡 **Règle d'or** : Utilisez toujours `const` par défaut, et `let` uniquement si la variable doit changer.
+  **Règle d'or** : Utilisez toujours `const` par défaut, et `let` uniquement si la variable doit changer.
 
 </div>
 
@@ -267,7 +213,7 @@ x <= 4;   // false
 
 <div class="mt-4 p-4 bg-red-50 rounded-lg">
 
-⚠️ **Important** : Utilisez toujours `===` et `!==` pour éviter les conversions de type inattendues !
+   **Important** : Utilisez toujours `===` et `!==` pour éviter les conversions de type inattendues !
 
 </div>
 
@@ -299,7 +245,7 @@ nom || "Anonyme";  // "Anonyme" (valeur par défaut)
 
 ---
 
-# 📝 EXERCICE 1
+#   EXERCICE 1
 
 ## Calculatrice simple
 
@@ -322,7 +268,7 @@ let nombre2 = 3;
 
 <div class="mt-4 p-4 bg-green-50 rounded-lg">
 
-✍️ **À vous de jouer !** Ouvrez votre éditeur et complétez le code.
+   **À vous de jouer !** Ouvrez votre éditeur et complétez le code.
 
 </div>
 
@@ -428,7 +374,7 @@ let message = age < 13 ? "Enfant"
 
 ---
 
-# 📝 EXERCICE 2
+#   EXERCICE 2
 
 ## Vérificateur de nombre
 
@@ -446,7 +392,7 @@ let nombre = 7;
 
 <div class="mt-4 p-4 bg-green-50 rounded-lg">
 
-💡 **Indice** : Un nombre est pair si `nombre % 2 === 0`
+  **Indice** : Un nombre est pair si `nombre % 2 === 0`
 
 </div>
 
@@ -523,7 +469,7 @@ do {
 } while (nombre <= 10);
 
 // Attention aux boucles infinies !
-// while (true) { ... } // ❌ Ne jamais faire ça sans condition de sortie
+// while (true) { ... } //   Ne jamais faire ça sans condition de sortie
 ```
 
 ---
@@ -550,7 +496,7 @@ for (let i = 0; i < 10; i++) {
 
 ---
 
-# 📝 EXERCICE 3
+#   EXERCICE 3
 
 ## Table de multiplication
 
@@ -569,7 +515,7 @@ let nombre = 7;
 
 <div class="mt-4 p-4 bg-green-50 rounded-lg">
 
-💡 **Indice** : Utilisez une boucle `for` de 1 à 10
+  **Indice** : Utilisez une boucle `for` de 1 à 10
 
 </div>
 
@@ -603,7 +549,7 @@ for (let table = 1; table <= 10; table++) {
 
 ---
 
-# 📝 EXERCICE 4
+#   EXERCICE 4
 
 ## FizzBuzz (Classique)
 
@@ -620,7 +566,7 @@ for (let table = 1; table <= 10; table++) {
 
 <div class="mt-4 p-4 bg-green-50 rounded-lg">
 
-💡 **Indice** : L'ordre des conditions est important ! Testez d'abord le cas "FizzBuzz"
+  **Indice** : L'ordre des conditions est important ! Testez d'abord le cas "FizzBuzz"
 
 </div>
 
@@ -652,7 +598,7 @@ for (let i = 1; i <= 100; i++) {
 
 ---
 
-# 🎮 MINI-PROJET Module 1
+#   MINI-PROJET Module 1
 
 ## Jeu "Plus ou Moins"
 
@@ -664,7 +610,7 @@ let nombreSecret = Math.floor(Math.random() * 100) + 1;
 let tentatives = 0;
 let trouve = false;
 
-console.log("🎮 Jeu du Plus ou Moins !");
+console.log("  Jeu du Plus ou Moins !");
 console.log("Devinez le nombre entre 1 et 100");
 
 // TODO:
@@ -685,7 +631,7 @@ let nombreSecret = Math.floor(Math.random() * 100) + 1;
 let tentatives = 0;
 let trouve = false;
 
-console.log("🎮 Jeu du Plus ou Moins !");
+console.log("  Jeu du Plus ou Moins !");
 console.log("Devinez le nombre entre 1 et 100");
 
 while (!trouve) {
@@ -694,13 +640,13 @@ while (!trouve) {
   tentatives++;
   
   if (isNaN(guess)) {
-    console.log("❌ Veuillez entrer un nombre valide");
+    console.log("  Veuillez entrer un nombre valide");
   } else if (guess < nombreSecret) {
-    console.log("📈 C'est plus !");
+    console.log("  C'est plus !");
   } else if (guess > nombreSecret) {
-    console.log("📉 C'est moins !");
+    console.log("  C'est moins !");
   } else {
-    console.log(`🎉 Bravo ! Vous avez trouvé ${nombreSecret} en ${tentatives} tentatives !`);
+    console.log(`  Bravo ! Vous avez trouvé ${nombreSecret} en ${tentatives} tentatives !`);
     trouve = true;
   }
 }
@@ -713,7 +659,7 @@ class: text-center
 
 # Module 1 - Terminé !
 
-## ✅ Ce que vous avez appris :
+##   Ce que vous avez appris :
 
 - Variables (let, const)
 - Types de données
@@ -721,7 +667,7 @@ class: text-center
 - Conditions (if, switch, ternaire)
 - Boucles (for, while)
 
-## 🎯 Prochain module : Fonctions
+##   Prochain module : Fonctions
 
 ---
 layout: center
@@ -731,7 +677,6 @@ class: text-center
 # Module 2
 ## Fonctions et Portée
 
-Durée : 4 heures
 
 ---
 
@@ -739,11 +684,11 @@ Durée : 4 heures
 
 <v-clicks>
 
-- ✅ Différentes façons de déclarer des fonctions
-- ✅ Maîtriser les paramètres et valeurs de retour
-- ✅ Comprendre la portée (scope) des variables
-- ✅ Utiliser les fonctions fléchées (ES6)
-- ✅ Introduction aux closures
+-   Différentes façons de déclarer des fonctions
+-   Maîtriser les paramètres et valeurs de retour
+-   Comprendre la portée (scope) des variables
+-   Utiliser les fonctions fléchées (ES6)
+-   Introduction aux closures
 
 </v-clicks>
 
@@ -853,7 +798,7 @@ function ancienne() {
 
 ---
 
-# 📝 EXERCICE 5
+#   EXERCICE 5
 
 ## Conversion Celsius/Fahrenheit
 
@@ -902,7 +847,7 @@ console.log(`${fahrenheitToCelsius(212)}°C`);   // 100°C
 
 ---
 
-# 📝 EXERCICE 6
+#   EXERCICE 6
 
 ## Vérification de palindrome
 
@@ -970,23 +915,23 @@ function testScope() {
   // Scope local (function scope)
   let localVar = "Je suis locale";
   
-  console.log(globalVar); // ✅ Accessible
-  console.log(localVar);  // ✅ Accessible
+  console.log(globalVar); //   Accessible
+  console.log(localVar);  //   Accessible
   
   if (true) {
     // Block scope (avec let/const)
     let blockVar = "Je suis de bloc";
     var functionVar = "Je suis de fonction";
     
-    console.log(localVar);  // ✅ Accessible
+    console.log(localVar);  //   Accessible
   }
   
-  console.log(functionVar); // ✅ Accessible (var ignore le block scope)
-  // console.log(blockVar); // ❌ Erreur !
+  console.log(functionVar); //   Accessible (var ignore le block scope)
+  // console.log(blockVar); //   Erreur !
 }
 
 testScope();
-// console.log(localVar); // ❌ Erreur !
+// console.log(localVar); //   Erreur !
 ```
 
 ---
@@ -1004,18 +949,18 @@ console.log(x); // undefined
 x = 5;
 
 // Avec let/const (hoisting mais pas d'initialisation)
-console.log(y); // ❌ ReferenceError !
+console.log(y); //   ReferenceError !
 let y = 5;
 
 // Fonctions déclarées (hoisting complet)
-direBonjour(); // ✅ Fonctionne !
+direBonjour(); //   Fonctionne !
 
 function direBonjour() {
   console.log("Bonjour !");
 }
 
 // Expressions de fonction (pas de hoisting)
-direSalut(); // ❌ TypeError !
+direSalut(); //   TypeError !
 
 const direSalut = function() {
   console.log("Salut !");
@@ -1055,7 +1000,7 @@ console.log(compteur.compte);        // undefined (privé !)
 
 ---
 
-# 📝 EXERCICE 7
+#   EXERCICE 7
 
 ## Générateur de citations
 
@@ -1127,7 +1072,7 @@ function creerGenerateurSansRepetition(citations) {
 
 ---
 
-# 📝 EXERCICE 8
+#   EXERCICE 8
 
 ## Validation de données
 
@@ -1184,7 +1129,7 @@ console.log(estNumeroValide("123"));                 // false
 
 ---
 
-# 🎮 MINI-PROJET Module 2
+#   MINI-PROJET Module 2
 
 ## Convertisseur de devises
 
@@ -1247,7 +1192,7 @@ function creerConvertisseur() {
     },
     
     afficherHistorique() {
-      console.log("📊 Historique des conversions :\n");
+      console.log("  Historique des conversions :\n");
       historique.forEach((conv, i) => {
         console.log(`${i + 1}. [${conv.date}] ${conv.montant} ${conv.de} = ${conv.resultat} ${conv.vers}`);
       });
@@ -1273,14 +1218,14 @@ class: text-center
 
 # Module 2 - Terminé !
 
-## ✅ Ce que vous avez appris :
+##   Ce que vous avez appris :
 
 - Déclarations et expressions de fonctions
 - Fonctions fléchées ES6
 - Paramètres et valeurs de retour
 - Scope et closures
 
-## 🎯 Prochain module : Objets et Tableaux
+##   Prochain module : Objets et Tableaux
 
 ---
 layout: center
@@ -1290,7 +1235,6 @@ class: text-center
 # Module 3
 ## Objets et Tableaux
 
-Durée : 4 heures
 
 ---
 
@@ -1298,11 +1242,11 @@ Durée : 4 heures
 
 <v-clicks>
 
-- ✅ Manipuler les tableaux avec les méthodes modernes
-- ✅ Utiliser map, filter, reduce
-- ✅ Créer et manipuler des objets
-- ✅ Maîtriser la destructuring ES6
-- ✅ Comprendre le spread operator
+-   Manipuler les tableaux avec les méthodes modernes
+-   Utiliser map, filter, reduce
+-   Créer et manipuler des objets
+-   Maîtriser la destructuring ES6
+-   Comprendre le spread operator
 
 </v-clicks>
 
@@ -1477,7 +1421,7 @@ const ageMoyen = utilisateurs
 
 ---
 
-# 📝 EXERCICE 9
+#   EXERCICE 9
 
 ## Liste de courses
 
@@ -1532,7 +1476,7 @@ console.log(avecA); // ["lait", "pain"]
 
 ---
 
-# 📝 EXERCICE 10
+#   EXERCICE 10
 
 ## Filtrage et tri d'étudiants
 
@@ -1743,7 +1687,7 @@ const fusion = { ...obj1, ...obj2 }; // { a: 1, b: 2, c: 3, d: 4 }
 // Copier et modifier
 const modifie = { ...obj1, b: 20, e: 5 }; // { a: 1, b: 20, e: 5 }
 
-// ⚠️ Copie superficielle (shallow copy) !
+//    Copie superficielle (shallow copy) !
 const original = { user: { name: "Alice" } };
 const copieObj = { ...original };
 copieObj.user.name = "Bob"; // Modifie aussi original !
@@ -1751,7 +1695,7 @@ copieObj.user.name = "Bob"; // Modifie aussi original !
 
 ---
 
-# 📝 EXERCICE 11
+#   EXERCICE 11
 
 ## Transformation de données
 
@@ -1821,7 +1765,7 @@ console.log("Moins cher par cat:", moinsCherParCat);
 
 ---
 
-# 🎮 MINI-PROJET Module 3
+#   MINI-PROJET Module 3
 
 ## Gestionnaire de contacts
 
@@ -1886,7 +1830,7 @@ function creerGestionnaireContacts() {
     },
     
     afficherTousLesContacts() {
-      console.log("\n📒 Liste des contacts:\n");
+      console.log("\n  Liste des contacts:\n");
       contacts.forEach(c => {
         console.log(`${c.id}. ${c.nom} - ${c.email} - ${c.telephone}`);
       });
@@ -1924,14 +1868,14 @@ class: text-center
 
 # Module 3 - Terminé !
 
-## ✅ Ce que vous avez appris :
+##   Ce que vous avez appris :
 
 - Méthodes de tableau (map, filter, reduce)
 - Manipulation d'objets
 - Destructuring
 - Spread operator
 
-## 🎯 Prochain module : Asynchrone
+##   Prochain module : Asynchrone
 
 ---
 layout: center
@@ -1941,7 +1885,6 @@ class: text-center
 # Module 4
 ## Asynchrone et API
 
-Durée : 4 heures
 
 ---
 
@@ -1949,11 +1892,11 @@ Durée : 4 heures
 
 <v-clicks>
 
-- ✅ Comprendre la programmation asynchrone
-- ✅ Maîtriser les Promises
-- ✅ Utiliser async/await
-- ✅ Consommer des API REST
-- ✅ Gérer les erreurs asynchrones
+-   Comprendre la programmation asynchrone
+-   Maîtriser les Promises
+-   Utiliser async/await
+-   Consommer des API REST
+-   Gérer les erreurs asynchrones
 
 </v-clicks>
 
@@ -1962,13 +1905,13 @@ Durée : 4 heures
 # Pourquoi l'asynchrone ?
 
 ```js
-// ❌ Code synchrone bloquant
+//   Code synchrone bloquant
 console.log("Début");
 const resultat = operationLongue(); // Bloque pendant 5 secondes
 console.log(resultat);
 console.log("Fin"); // S'affiche après 5 secondes
 
-// ✅ Code asynchrone non-bloquant
+//   Code asynchrone non-bloquant
 console.log("Début");
 operationLongueAsync().then(resultat => {
   console.log(resultat);
@@ -2003,7 +1946,7 @@ chargerDonnees("/api/user", (erreur, donnees) => {
   console.log("Données:", donnees);
 });
 
-// ⚠️ Callback Hell (à éviter !)
+//    Callback Hell (à éviter !)
 chargerA((err, a) => {
   chargerB(a, (err, b) => {
     chargerC(b, (err, c) => {
@@ -2183,7 +2126,7 @@ async function processCommande(commandeId) {
 
 ---
 
-# 📝 EXERCICE 12
+#   EXERCICE 12
 
 ## Créer une Promise
 
@@ -2243,7 +2186,7 @@ async function exemple() {
 
 ---
 
-# 📝 EXERCICE 13
+#   EXERCICE 13
 
 ## Chaîner des opérations asynchrones
 
@@ -2430,7 +2373,7 @@ fetchWithRetry('https://api.example.com/data')
 
 ---
 
-# 📝 EXERCICE 14
+#   EXERCICE 14
 
 ## Récupérer des données d'API
 
@@ -2508,7 +2451,7 @@ analyserPosts();
 
 ---
 
-# 🎮 MINI-PROJET Module 4
+#   MINI-PROJET Module 4
 
 ## Application Météo
 
@@ -2582,25 +2525,25 @@ function creerApplicationMeteo() {
     
     async afficherMeteoVille(nomVille) {
       try {
-        console.log(`\n🌤️  Recherche de: ${nomVille}...`);
+        console.log(`\n    Recherche de: ${nomVille}...`);
         
         const ville = await this.rechercherVille(nomVille);
-        console.log(`📍 Trouvé: ${ville.name}, ${ville.country}`);
+        console.log(`  Trouvé: ${ville.name}, ${ville.country}`);
         
         const meteo = await this.obtenirMeteo(ville.latitude, ville.longitude);
         
-        console.log(`\n🌡️  Température: ${meteo.temperature_2m}°C`);
-        console.log(`💧 Humidité: ${meteo.relative_humidity_2m}%`);
-        console.log(`📝 Code météo: ${meteo.weather_code}`);
+        console.log(`\n    Température: ${meteo.temperature_2m}°C`);
+        console.log(`  Humidité: ${meteo.relative_humidity_2m}%`);
+        console.log(`  Code météo: ${meteo.weather_code}`);
         
         return { ville, meteo };
       } catch (erreur) {
-        console.error(`❌ Erreur: ${erreur.message}`);
+        console.error(`  Erreur: ${erreur.message}`);
       }
     },
     
     async comparerVilles(...nomsVilles) {
-      console.log("\n📊 Comparaison des villes:\n");
+      console.log("\n  Comparaison des villes:\n");
       
       const resultats = await Promise.all(
         nomsVilles.map(nom => 
@@ -2620,7 +2563,7 @@ function creerApplicationMeteo() {
         r.meteo.temperature_2m > max.meteo.temperature_2m ? r : max
       );
       
-      console.log(`\n🏆 Ville la plus chaude: ${plusChaude.ville.name} (${plusChaude.meteo.temperature_2m}°C)`);
+      console.log(`\n  Ville la plus chaude: ${plusChaude.ville.name} (${plusChaude.meteo.temperature_2m}°C)`);
     },
     
     viderCache() {
@@ -2643,7 +2586,7 @@ class: text-center
 
 # Module 4 - Terminé !
 
-## ✅ Ce que vous avez appris :
+##   Ce que vous avez appris :
 
 - Programmation asynchrone
 - Promises (création et consommation)
@@ -2651,7 +2594,7 @@ class: text-center
 - Fetch API
 - Gestion des erreurs
 
-## 🎯 Prochain module : DOM et Événements
+##   Prochain module : DOM et Événements
 
 ---
 layout: center
@@ -2661,7 +2604,6 @@ class: text-center
 # Module 5
 ## DOM, Événements et Projet Final
 
-Durée : 4 heures
 
 ---
 
@@ -2669,11 +2611,11 @@ Durée : 4 heures
 
 <v-clicks>
 
-- ✅ Comprendre le DOM (Document Object Model)
-- ✅ Sélectionner et manipuler des éléments HTML
-- ✅ Gérer les événements utilisateur
-- ✅ Utiliser le localStorage
-- ✅ Créer une application complète
+-   Comprendre le DOM (Document Object Model)
+-   Sélectionner et manipuler des éléments HTML
+-   Gérer les événements utilisateur
+-   Utiliser le localStorage
+-   Créer une application complète
 
 </v-clicks>
 
@@ -2863,13 +2805,13 @@ touchend    // Fin du toucher
 # Délégation d'événements
 
 ```js
-// ❌ Mauvaise méthode : ajouter un écouteur à chaque élément
+//   Mauvaise méthode : ajouter un écouteur à chaque élément
 const items = document.querySelectorAll('.item');
 items.forEach(item => {
   item.addEventListener('click', () => console.log('Clic !'));
 });
 
-// ✅ Bonne méthode : délégation d'événements
+//   Bonne méthode : délégation d'événements
 const liste = document.getElementById('maListe');
 
 liste.addEventListener('click', (e) => {
@@ -2920,7 +2862,7 @@ sessionStorage.setItem('temp', 'valeur');
 
 ---
 
-# 📝 EXERCICE 15
+#   EXERCICE 15
 
 ## Manipulation basique du DOM
 
@@ -3006,7 +2948,7 @@ mettreAJourCompteur();
 
 ---
 
-# 📝 EXERCICE 16
+#   EXERCICE 16
 
 ## Formulaire avec validation
 
@@ -3108,7 +3050,7 @@ form.addEventListener('submit', (e) => {
 
 ---
 
-# 🎮 PROJET FINAL
+#   PROJET FINAL
 
 ## Todo List Complète
 
@@ -3269,7 +3211,7 @@ const todoApp = {
 </head>
 <body>
   <div class="container">
-    <h1>📝 Ma Todo List</h1>
+    <h1>  Ma Todo List</h1>
     <div class="stats" id="stats">0 tâches • 0 complétées</div>
     
     <div class="input-group">
@@ -3278,7 +3220,7 @@ const todoApp = {
     </div>
     
     <div class="search">
-      <input type="text" id="searchInput" placeholder="🔍 Rechercher une tâche...">
+      <input type="text" id="searchInput" placeholder="  Rechercher une tâche...">
     </div>
     
     <div class="filters">
@@ -3467,23 +3409,23 @@ const app = new TodoApp();
 
 # Félicitations !
 
-## 🎉 Vous avez terminé les 5 modules !
+##   Vous avez terminé les 5 modules !
 
 ### Récapitulatif de ce que vous avez accompli :
 
-**Module 1** ✅ Fondamentaux (variables, conditions, boucles)
+**Module 1**   Fondamentaux (variables, conditions, boucles)
 - Jeu "Plus ou Moins"
 
-**Module 2** ✅ Fonctions et Scope  
+**Module 2**   Fonctions et Scope  
 - Convertisseur de devises avec historique
 
-**Module 3** ✅ Objets et Tableaux
+**Module 3**   Objets et Tableaux
 - Gestionnaire de contacts
 
-**Module 4** ✅ Asynchrone et API
+**Module 4**   Asynchrone et API
 - Application météo avec caching
 
-**Module 5** ✅ DOM et Événements
+**Module 5**   DOM et Événements
 - **Todo List complète** avec :
   - CRUD des tâches
   - Filtres et recherche
@@ -3507,8 +3449,8 @@ const app = new TodoApp();
 - **Build tools** - Webpack, Vite, Parcel
 
 ### Projets suggérés
-- 🎮 Jeu en navigateur (Snake, Tetris)
-- 📊 Dashboard avec graphiques
+-   Jeu en navigateur (Snake, Tetris)
+-   Dashboard avec graphiques
 - 🛒 E-commerce complet
 - 💬 Chat en temps réel (WebSockets)
 
@@ -3527,9 +3469,9 @@ class: text-center
 ## Questions ?
 
 ### Ressources
-📚 Repo GitHub : [github.com/devalade/javascript-essentials-slides](https://github.com/devalade/javascript-essentials-slides)
+  Repo GitHub : [github.com/devalade/javascript-essentials-slides](https://github.com/devalade/javascript-essentials-slides)
 
-🎨 Slides créées avec [Slidev](https://sli.dev)
+  Slides créées avec [Slidev](https://sli.dev)
 
 ---
 
@@ -3677,4 +3619,4 @@ event.clientY;     // Position Y souris
 
 # Fin de la présentation
 
-**Bonne chance pour vos projets JavaScript ! 🚀**
+**Bonne chance pour vos projets JavaScript !  **
