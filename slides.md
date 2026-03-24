@@ -40,19 +40,6 @@ class: text-center
 
 ---
 
-# Module 1 - Objectifs
-
-<v-clicks>
-
--   Comprendre la syntaxe de base de JavaScript
--   Maîtriser les différents types de données
--   Savoir utiliser les structures conditionnelles
--   Maîtriser les boucles (for, while)
--   Créer son premier programme interactif
-
-</v-clicks>
-
----
 
 # Qu'est-ce que JavaScript ?
 
@@ -251,7 +238,7 @@ nom || "Anonyme";  // "Anonyme" (valeur par défaut)
 
 **Objectif** : Créer une calculatrice basique
 
-```js
+```js {monaco-run}
 let nombre1 = 10;
 let nombre2 = 3;
 
@@ -268,7 +255,7 @@ let nombre2 = 3;
 
 <div class="mt-4 p-5 bg-emerald-600 text-white rounded-lg shadow-md">
 
-   **À vous de jouer !** Ouvrez votre éditeur et complétez le code.
+   **À vous de jouer !** Complétez le code ci-dessus et exécutez-le directement dans votre navigateur.
 
 </div>
 
@@ -380,7 +367,7 @@ let message = age < 13 ? "Enfant"
 
 **Objectif** : Créer un programme qui vérifie si un nombre est pair ou impair
 
-```js
+```js {monaco-run}
 let nombre = 7;
 
 // TODO: Vérifier si le nombre est pair ou impair
@@ -502,7 +489,7 @@ for (let i = 0; i < 10; i++) {
 
 **Objectif** : Créer la table de multiplication d'un nombre
 
-```js
+```js {monaco-run}
 let nombre = 7;
 
 // TODO: Afficher la table de multiplication de 1 à 10
@@ -555,7 +542,7 @@ for (let table = 1; table <= 10; table++) {
 
 **Objectif** : Programme célèbre pour tester les bases
 
-```js
+```js {monaco-run}
 // TODO: Afficher les nombres de 1 à 100
 // Règles :
 // - Si divisible par 3 → "Fizz"
@@ -657,19 +644,6 @@ layout: center
 class: text-center
 ---
 
-# Module 1 - Terminé !
-
-##   Ce que vous avez appris :
-
-- Variables (let, const)
-- Types de données
-- Opérateurs
-- Conditions (if, switch, ternaire)
-- Boucles (for, while)
-
-##   Prochain module : Fonctions
-
----
 layout: center
 class: text-center
 ---
@@ -680,19 +654,6 @@ class: text-center
 
 ---
 
-# Module 2 - Objectifs
-
-<v-clicks>
-
--   Différentes façons de déclarer des fonctions
--   Maîtriser les paramètres et valeurs de retour
--   Comprendre la portée (scope) des variables
--   Utiliser les fonctions fléchées (ES6)
--   Introduction aux closures
-
-</v-clicks>
-
----
 
 # Déclaration de fonction
 
@@ -804,7 +765,7 @@ function ancienne() {
 
 **Objectif** : Créer une fonction de conversion de température
 
-```js
+```js {monaco-run}
 // TODO: Créer deux fonctions
 // 1. celsiusToFahrenheit(celsius) → retourne la température en Fahrenheit
 // 2. fahrenheitToCelsius(fahrenheit) → retourne la température en Celsius
@@ -853,7 +814,7 @@ console.log(`${fahrenheitToCelsius(212)}°C`);   // 100°C
 
 **Objectif** : Créer une fonction qui vérifie si un mot est un palindrome
 
-```js
+```js {monaco-run}
 // TODO: Créer la fonction estPalindrome(mot)
 // Un palindrome se lit identiquement dans les deux sens
 // Exemples : "radar", "kayak", "ressasser"
@@ -1006,7 +967,7 @@ console.log(compteur.compte);        // undefined (privé !)
 
 **Objectif** : Créer une fonction qui génère des citations aléatoires
 
-```js
+```js {monaco-run}
 // TODO: Créer une fonction creerGenerateurDeCitations()
 // La fonction doit retourner une autre fonction
 // Chaque appel génère une citation aléatoire
@@ -1078,7 +1039,7 @@ function creerGenerateurSansRepetition(citations) {
 
 **Objectif** : Créer des fonctions de validation
 
-```js
+```js {monaco-run}
 // TODO: Créer les fonctions suivantes :
 // 1. estEmailValide(email) - Vérifie le format d'email
 // 2. estMotDePasseValide(mdp) - Min 8 caractères, 1 majuscule, 1 chiffre
@@ -1216,18 +1177,6 @@ layout: center
 class: text-center
 ---
 
-# Module 2 - Terminé !
-
-##   Ce que vous avez appris :
-
-- Déclarations et expressions de fonctions
-- Fonctions fléchées ES6
-- Paramètres et valeurs de retour
-- Scope et closures
-
-##   Prochain module : Objets et Tableaux
-
----
 layout: center
 class: text-center
 ---
@@ -1238,19 +1187,6 @@ class: text-center
 
 ---
 
-# Module 3 - Objectifs
-
-<v-clicks>
-
--   Manipuler les tableaux avec les méthodes modernes
--   Utiliser map, filter, reduce
--   Créer et manipuler des objets
--   Maîtriser la destructuring ES6
--   Comprendre le spread operator
-
-</v-clicks>
-
----
 
 # Tableaux - Création et accès
 
@@ -1427,7 +1363,7 @@ const ageMoyen = utilisateurs
 
 **Objectif** : Manipuler une liste de courses
 
-```js
+```js {monaco-run}
 let courses = ["lait", "pain", "œufs", "beurre"];
 
 // TODO: Réaliser les opérations suivantes :
@@ -1482,7 +1418,7 @@ console.log(avecA); // ["lait", "pain"]
 
 **Objectif** : Manipuler un tableau d'étudiants
 
-```js
+```js {monaco-run}
 const etudiants = [
   { nom: "Alice", note: 15, classe: "A" },
   { nom: "Bob", note: 8, classe: "B" },
@@ -1701,7 +1637,7 @@ copieObj.user.name = "Bob"; // Modifie aussi original !
 
 **Objectif** : Transformer un tableau en objet
 
-```js
+```js {monaco-run}
 const produits = [
   { id: 1, nom: "Laptop", prix: 999, categorie: "Tech" },
   { id: 2, nom: "Souris", prix: 29, categorie: "Tech" },
@@ -1866,18 +1802,6 @@ layout: center
 class: text-center
 ---
 
-# Module 3 - Terminé !
-
-##   Ce que vous avez appris :
-
-- Méthodes de tableau (map, filter, reduce)
-- Manipulation d'objets
-- Destructuring
-- Spread operator
-
-##   Prochain module : Asynchrone
-
----
 layout: center
 class: text-center
 ---
@@ -1888,19 +1812,6 @@ class: text-center
 
 ---
 
-# Module 4 - Objectifs
-
-<v-clicks>
-
--   Comprendre la programmation asynchrone
--   Maîtriser les Promises
--   Utiliser async/await
--   Consommer des API REST
--   Gérer les erreurs asynchrones
-
-</v-clicks>
-
----
 
 # Pourquoi l'asynchrone ?
 
@@ -2132,7 +2043,7 @@ async function processCommande(commandeId) {
 
 **Objectif** : Créer une Promise qui simule un délai
 
-```js
+```js {monaco-run}
 // TODO: Créer une fonction attente(ms) qui retourne une Promise
 // La Promise doit se résoudre après ms millisecondes
 
@@ -2192,7 +2103,7 @@ async function exemple() {
 
 **Objectif** : Créer une chaîne d'opérations asynchrones
 
-```js
+```js {monaco-run}
 // TODO: Créer 3 fonctions qui retournent des Promises :
 // 1. recupererUtilisateur(id) - retourne {id, nom} après 500ms
 // 2. recupererCommandes(utilisateurId) - retourne [...] après 800ms
@@ -2379,7 +2290,7 @@ fetchWithRetry('https://api.example.com/data')
 
 **Objectif** : Consommer une API publique
 
-```js
+```js {monaco-run}
 // TODO: Utiliser l'API JSONPlaceholder (https://jsonplaceholder.typicode.com/)
 // pour :
 
@@ -2584,19 +2495,6 @@ layout: center
 class: text-center
 ---
 
-# Module 4 - Terminé !
-
-##   Ce que vous avez appris :
-
-- Programmation asynchrone
-- Promises (création et consommation)
-- Async/await
-- Fetch API
-- Gestion des erreurs
-
-##   Prochain module : DOM et Événements
-
----
 layout: center
 class: text-center
 ---
@@ -2607,19 +2505,6 @@ class: text-center
 
 ---
 
-# Module 5 - Objectifs
-
-<v-clicks>
-
--   Comprendre le DOM (Document Object Model)
--   Sélectionner et manipuler des éléments HTML
--   Gérer les événements utilisateur
--   Utiliser le localStorage
--   Créer une application complète
-
-</v-clicks>
-
----
 
 # Qu'est-ce que le DOM ?
 
@@ -2878,7 +2763,7 @@ sessionStorage.setItem('temp', 'valeur');
 </div>
 ```
 
-```js
+```js {monaco-run}
 // TODO: 
 // 1. Sélectionner les éléments
 // 2. Au clic sur le bouton, ajouter le texte dans la liste
@@ -2965,7 +2850,7 @@ mettreAJourCompteur();
 <div id="erreurs"></div>
 ```
 
-```js
+```js {monaco-run}
 // TODO:
 // 1. Intercepter la soumission du formulaire
 // 2. Valider chaque champ (nom non vide, email valide, message > 10 caractères)
