@@ -65,7 +65,7 @@ class: text-center
 
 </v-clicks>
 
-<div v-click class="mt-8 p-5 bg-blue-200 border-l-4 border-blue-600 rounded-lg shadow-md">
+<div v-click class="mt-8 p-5 bg-blue-600 text-white rounded-lg shadow-md">
 
 ### Où écrit-on du JavaScript ?
 
@@ -100,7 +100,7 @@ const PI = 3.14159;
 // PI = 3.14; //   Erreur !
 ```
 
-<div class="mt-4 p-5 bg-amber-200 border-l-4 border-amber-600 rounded-lg shadow-md">
+<div class="mt-4 p-5 bg-amber-500 text-white rounded-lg shadow-md">
 
   **Règle d'or** : Utilisez toujours `const` par défaut, et `let` uniquement si la variable doit changer.
 
@@ -211,7 +211,7 @@ x >= 5;   // true
 x <= 4;   // false
 ```
 
-<div class="mt-4 p-5 bg-red-200 border-l-4 border-red-600 rounded-lg shadow-md">
+<div class="mt-4 p-5 bg-red-600 text-white rounded-lg shadow-md">
 
    **Important** : Utilisez toujours `===` et `!==` pour éviter les conversions de type inattendues !
 
@@ -266,7 +266,7 @@ let nombre2 = 3;
 // Modulo: 1
 ```
 
-<div class="mt-4 p-5 bg-emerald-200 border-l-4 border-emerald-600 rounded-lg shadow-md">
+<div class="mt-4 p-5 bg-emerald-600 text-white rounded-lg shadow-md">
 
    **À vous de jouer !** Ouvrez votre éditeur et complétez le code.
 
@@ -390,7 +390,7 @@ let nombre = 7;
 // BONUS: Vérifier aussi si le nombre est positif, négatif ou zéro
 ```
 
-<div class="mt-4 p-5 bg-emerald-200 border-l-4 border-emerald-600 rounded-lg shadow-md">
+<div class="mt-4 p-5 bg-emerald-600 text-white rounded-lg shadow-md">
 
   **Indice** : Un nombre est pair si `nombre % 2 === 0`
 
@@ -513,7 +513,7 @@ let nombre = 7;
 // 7 x 10 = 70
 ```
 
-<div class="mt-4 p-5 bg-emerald-200 border-l-4 border-emerald-600 rounded-lg shadow-md">
+<div class="mt-4 p-5 bg-emerald-600 text-white rounded-lg shadow-md">
 
   **Indice** : Utilisez une boucle `for` de 1 à 10
 
@@ -564,7 +564,7 @@ for (let table = 1; table <= 10; table++) {
 // - Sinon → le nombre
 ```
 
-<div class="mt-4 p-5 bg-emerald-200 border-l-4 border-emerald-600 rounded-lg shadow-md">
+<div class="mt-4 p-5 bg-emerald-600 text-white rounded-lg shadow-md">
 
   **Indice** : L'ordre des conditions est important ! Testez d'abord le cas "FizzBuzz"
 
