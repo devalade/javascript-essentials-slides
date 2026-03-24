@@ -28,8 +28,6 @@ De débutant à avancé
 
 ---
 transition: fade-out
----
-
 layout: center
 class: text-center
 ---
